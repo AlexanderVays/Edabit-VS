@@ -1,0 +1,26 @@
+C:\Users\Alexander\source\repos\Edabit\Edabit\bin\Debug\netcoreapp3.1\Edabit.exe
+C:\Users\Alexander\source\repos\Edabit\Edabit\bin\Debug\netcoreapp3.1\Edabit.deps.json
+C:\Users\Alexander\source\repos\Edabit\Edabit\bin\Debug\netcoreapp3.1\Edabit.runtimeconfig.json
+C:\Users\Alexander\source\repos\Edabit\Edabit\bin\Debug\netcoreapp3.1\Edabit.runtimeconfig.dev.json
+C:\Users\Alexander\source\repos\Edabit\Edabit\bin\Debug\netcoreapp3.1\Edabit.dll
+C:\Users\Alexander\source\repos\Edabit\Edabit\bin\Debug\netcoreapp3.1\Edabit.pdb
+C:\Users\Alexander\source\repos\Edabit\Edabit\obj\Debug\netcoreapp3.1\Edabit.csprojAssemblyReference.cache
+C:\Users\Alexander\source\repos\Edabit\Edabit\obj\Debug\netcoreapp3.1\Edabit.csproj.CoreCompileInputs.cache
+C:\Users\Alexander\source\repos\Edabit\Edabit\obj\Debug\netcoreapp3.1\Edabit.AssemblyInfoInputs.cache
+C:\Users\Alexander\source\repos\Edabit\Edabit\obj\Debug\netcoreapp3.1\Edabit.AssemblyInfo.cs
+C:\Users\Alexander\source\repos\Edabit\Edabit\obj\Debug\netcoreapp3.1\Edabit.dll
+C:\Users\Alexander\source\repos\Edabit\Edabit\obj\Debug\netcoreapp3.1\Edabit.pdb
+C:\Users\Alexander\source\repos\Edabit\Edabit\obj\Debug\netcoreapp3.1\Edabit.genruntimeconfig.cache
+D:\Studying\Self Studies\C#\Edabit\Edabit\bin\Debug\netcoreapp3.1\Edabit.exe
+D:\Studying\Self Studies\C#\Edabit\Edabit\bin\Debug\netcoreapp3.1\Edabit.deps.json
+D:\Studying\Self Studies\C#\Edabit\Edabit\bin\Debug\netcoreapp3.1\Edabit.runtimeconfig.json
+D:\Studying\Self Studies\C#\Edabit\Edabit\bin\Debug\netcoreapp3.1\Edabit.runtimeconfig.dev.json
+D:\Studying\Self Studies\C#\Edabit\Edabit\bin\Debug\netcoreapp3.1\Edabit.dll
+D:\Studying\Self Studies\C#\Edabit\Edabit\bin\Debug\netcoreapp3.1\Edabit.pdb
+D:\Studying\Self Studies\C#\Edabit\Edabit\obj\Debug\netcoreapp3.1\Edabit.csprojAssemblyReference.cache
+D:\Studying\Self Studies\C#\Edabit\Edabit\obj\Debug\netcoreapp3.1\Edabit.csproj.CoreCompileInputs.cache
+D:\Studying\Self Studies\C#\Edabit\Edabit\obj\Debug\netcoreapp3.1\Edabit.AssemblyInfoInputs.cache
+D:\Studying\Self Studies\C#\Edabit\Edabit\obj\Debug\netcoreapp3.1\Edabit.AssemblyInfo.cs
+D:\Studying\Self Studies\C#\Edabit\Edabit\obj\Debug\netcoreapp3.1\Edabit.dll
+D:\Studying\Self Studies\C#\Edabit\Edabit\obj\Debug\netcoreapp3.1\Edabit.pdb
+D:\Studying\Self Studies\C#\Edabit\Edabit\obj\Debug\netcoreapp3.1\Edabit.genruntimeconfig.cache
