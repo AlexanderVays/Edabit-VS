@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Studying\\Self Studies\\C#\\Edabit\\Edabit\\Edabit.csproj": {}
+    "D:\\GitRepos\\Edabit-VS\\Edabit\\Edabit.csproj": {}
   },
   "projects": {
-    "D:\\Studying\\Self Studies\\C#\\Edabit\\Edabit\\Edabit.csproj": {
+    "D:\\GitRepos\\Edabit-VS\\Edabit\\Edabit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Studying\\Self Studies\\C#\\Edabit\\Edabit\\Edabit.csproj",
+        "projectUniqueName": "D:\\GitRepos\\Edabit-VS\\Edabit\\Edabit.csproj",
         "projectName": "Edabit",
-        "projectPath": "D:\\Studying\\Self Studies\\C#\\Edabit\\Edabit\\Edabit.csproj",
+        "projectPath": "D:\\GitRepos\\Edabit-VS\\Edabit\\Edabit.csproj",
         "packagesPath": "C:\\Users\\Alexander\\.nuget\\packages\\",
-        "outputPath": "D:\\Studying\\Self Studies\\C#\\Edabit\\Edabit\\obj\\",
+        "outputPath": "D:\\GitRepos\\Edabit-VS\\Edabit\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Studying\\Self Studies\\C#\\Edabit\\Edabit\\Edabit.csproj",
+      "projectUniqueName": "D:\\GitRepos\\Edabit-VS\\Edabit\\Edabit.csproj",
       "projectName": "Edabit",
-      "projectPath": "D:\\Studying\\Self Studies\\C#\\Edabit\\Edabit\\Edabit.csproj",
+      "projectPath": "D:\\GitRepos\\Edabit-VS\\Edabit\\Edabit.csproj",
       "packagesPath": "C:\\Users\\Alexander\\.nuget\\packages\\",
-      "outputPath": "D:\\Studying\\Self Studies\\C#\\Edabit\\Edabit\\obj\\",
+      "outputPath": "D:\\GitRepos\\Edabit-VS\\Edabit\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
