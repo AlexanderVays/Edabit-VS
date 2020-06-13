@@ -12,7 +12,7 @@ namespace Edabit
             //Console.WriteLine(Mathematic.PowerRanger(3, 1, 9));
             //int[] testArr = Arrays.RemoveSmallest(new int[] { 2, 2, 1, 2, 1 });
             //Console.WriteLine("[{0}]", string.Join(", ", testArr)); 
-            HashTables.HashtableMethods();
+            QuickSortAlgorithm.SortArray(QuickSortAlgorithm.intArr);
         }
     }
 }
