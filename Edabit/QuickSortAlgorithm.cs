@@ -6,8 +6,6 @@ namespace Edabit
 {
     class QuickSortAlgorithm
     {
-        public static int[] intArr = new int[] { 2, 7, 87, 34, 1, 45, 9 };
-
         public static void SortArray(int[] arr) 
         {
             QuickSort(arr, 0, arr.Length - 1);

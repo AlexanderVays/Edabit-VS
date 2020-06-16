@@ -9,8 +9,11 @@ namespace Edabit
     class Strings
     {
 
-        //Array.Sort(arr);
-        //Array.Reverse(arr); - sorting an array in a reverse order
+        // Compares to string ignore case
+        public static bool CompareStr(string first, string second) 
+        {
+            return first.Equals(second, StringComparison.OrdinalIgnoreCase);
+        }
 
         //count specific characters in a string
         public static int CountVowels(string str)

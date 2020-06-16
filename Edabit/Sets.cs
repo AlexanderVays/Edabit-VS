@@ -6,7 +6,7 @@ namespace Edabit
 {
     class Sets
     {
-        //removes duplicates from the array by using HashSet
+        // Removes duplicates from the array by using HashSet
         public static object[] RemoveDups(object[] str)
         {
             var mySet = new HashSet<object>();
