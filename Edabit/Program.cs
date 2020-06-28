@@ -6,12 +6,11 @@ namespace Edabit
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine(Mathematic.GetFib(13));
-            //Console.WriteLine(Mathematic.GetFibonachi(13));
-            //Console.WriteLine(Mathematic.PowerRanger(3, 1, 9));
-            //int[] testArr = Arrays.RemoveSmallest(new int[] { 2, 2, 1, 2, 1 });
-            //Console.WriteLine("[{0}]", string.Join(", ", testArr)); 
-            TestTree();
+            /* int[] A = new int[] { 4, 3, 2, 1, 5 };
+            int[] B = new int[] { 0, 1, 0, 0, 0 };
+            Console.WriteLine(StackQueue.Fish(A, B)); */
+            Dictionary.GetPopulated();
+            Dictionary.GetSortedByValue(4);
         }
 
         public static void TestTree() 
@@ -36,6 +35,19 @@ namespace Edabit
             {
                 Console.WriteLine("Nothing found");
             }
+        }
+
+        public static void TestLinkedList() 
+        {
+            LinkedList myList = new LinkedList();
+            myList.AddSorted(9);
+            myList.AddSorted(5);
+            myList.AddSorted(11);
+            myList.AddSorted(4);
+            myList.AddSorted(3);
+            myList.AddSorted(6);
+            myList.Print();
+            Console.WriteLine($"\r\nThe number of items in the list is {myList.Count()}");
         }
     }
 }

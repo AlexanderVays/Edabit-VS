@@ -66,7 +66,7 @@ namespace Edabit
         public static object[] ArrayCopy(object[] arr) 
         {
             var newArr = new object[arr.Length];
-            Array.Copy(arr, newArr, 3); // third argument indicates number of items to copy, could be aa.Length
+            Array.Copy(arr, newArr, 3); // third argument indicates number of items to copy, could be arr.Length
             return newArr;
         }
 

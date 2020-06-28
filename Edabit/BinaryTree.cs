@@ -5,9 +5,10 @@ using System.Text;
 
 namespace Edabit
 {
+    //heep is an implementation of a Binary Search Tree data structure
     public class BinaryTree 
     {
-        private Node root;
+        private TreeNode root;
 
         // Binary tree constructor
         public BinaryTree() 
@@ -18,7 +19,7 @@ namespace Edabit
         // Binary tree constructor
         public BinaryTree(int value)
         {
-            root = new Node(value);
+            root = new TreeNode(value);
         }
 
         public void Insert(int value) 
@@ -30,7 +31,7 @@ namespace Edabit
             }
             else //if the root is null than we set the root
             {
-                root = new Node(value);
+                root = new TreeNode(value);
             }
         }
 
@@ -62,7 +63,7 @@ namespace Edabit
         }
 
         // Method to find a node not a recursive function
-        public Node Find(int value) // Complexity O(log n)
+        public TreeNode Find(int value) // Complexity O(log n)
         {
             if (root != null)
             {
@@ -75,7 +76,7 @@ namespace Edabit
         }
 
         // Method to find a node not a recursive function
-        public Node FindRecursive(int value) // Complexity O(log n)
+        public TreeNode FindRecursive(int value) // Complexity O(log n)
         {
             if (root != null)
             {
@@ -86,12 +87,112 @@ namespace Edabit
                 return null;
             }
         }
+
+        public void remove(int value)
+        {
+            // Set the current and parent node to a root node
+            TreeNode current = root;
+            TreeNode parent = root;
+            bool isLeftNode = false; // keep track which child of parent will be removed
+
+            // empty tree means nothing to delete so just return from remove method
+            if (current == null) 
+            {
+                return;
+            }
+
+            // loop throught until we found the node with currend data equals to a value or until the node is not found
+            while (current != null && value != current.Data)
+            {
+                parent = current; // set parent to current node to be a new parent reference to look for it's children
+
+                // if the value is less than current node data then we look for it's left child
+                if (value < current.Data)
+                {
+                    isLeftNode = true;
+                    current = current.Left;
+                }
+                // if the value is greater than a current node then we look for it's right child
+                else 
+                {
+                    isLeftNode = false;
+                    current = current.Right;
+                }
+            }
+            //if the node is not found than return 
+            if (current == null) 
+            {
+                return;
+            }
+
+            if (current.Left != null && current.Right != null)
+            {
+                if (current == root)
+                {
+                    root = null;
+                }
+                else
+                {
+                    // look which child (left, right) of a parent should be deleted
+                    if (isLeftNode)
+                    {
+                        parent.Left = null; // remove reference to left child node
+                    }
+                    else
+                    {
+                        parent.Right = null; // remove reference to right child node
+                    }
+                }
+            }
+            // if current has only left child than we 
+            else if (current.Right == null)
+            {
+                //if the current node is a root than set a root to a left child node
+                if (current == root)
+                {
+                    root = current.Left;
+                }
+                // look which child of a parent should be deleted
+                else
+                {
+                    if (isLeftNode)
+                    {
+                        parent.Left = current.Left;
+                    }
+                    else 
+                    {
+                        parent.Left = current.Right;
+                    }
+                }
+            }
+            // if current has only right child than we
+            else if (current.Left == null) 
+            {
+                //if the current node is a root than set a root to a right child node
+                if (current == root) 
+                {
+                    root = current.Right;
+                }
+                // look which child of a parent should be deleted
+                else
+                {
+                    if (isLeftNode)
+                    {
+                        parent.Left = current.Right;
+                    }
+                    else 
+                    {
+                        parent.Left = current.Right;
+                    }
+                }
+            }
+        }
     }
 
     /// <summary>
     /// Node class which implements nodes methods and data
     /// </summary>
-    public class Node
+    public class TreeNode
     {
         private int data;
 
@@ -100,17 +201,17 @@ namespace Edabit
             get { return data; }
         }
 
-        private Node right; //right child
+        private TreeNode right; //right child
 
-        public Node Right 
+        public TreeNode Right 
         {
             get { return right; }
             set { right = value; }
         }
 
-        private Node left; //left child
+        private TreeNode left; //left child
 
-        public Node Left
+        public TreeNode Left
         {
             get { return left; }
             set { left = value; }
@@ -123,7 +224,7 @@ namespace Edabit
             {
                 if (left == null)
                 {
-                    left = new Node(value);
+                    left = new TreeNode(value);
                 }
                 else
                 {
@@ -134,7 +235,7 @@ namespace Edabit
             {
                 if (right == null)
                 {
-                    right = new Node(value);
+                    right = new TreeNode(value);
                 }
                 else 
                 {
@@ -227,7 +328,7 @@ namespace Edabit
         }
 
         // Node constructor
-        public Node(int value) 
+        public TreeNode(int value) 
         {
             this.data = value;
         }
@@ -239,9 +340,9 @@ namespace Edabit
         }
         
         // Non recursive method to find a node. Complexity O(log n)
-        public Node Find(int value) 
+        public TreeNode Find(int value) 
         {
-            Node currentNode = this; // this node is a current node
+            TreeNode currentNode = this; // this node is a current node
 
             //loop throught this node and throught the children of this node
             while(currentNode != null) 
@@ -267,7 +368,7 @@ namespace Edabit
         }
 
         // Recursive method to find a node. Complexity O(log n)
-        public Node FindRecursive(int value) 
+        public TreeNode FindRecursive(int value) 
         {
             // if value equals data than return the node
             if (value == data && isDeleted == false)
