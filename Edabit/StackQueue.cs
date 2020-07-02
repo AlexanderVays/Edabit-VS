@@ -38,5 +38,43 @@ namespace Edabit
             }
             return (A.Length - eatenFishes);
         }
+
+        // check if the parentheses in the string are correctly placed
+        public static bool CheckParentheses(string str) 
+        {
+            Dictionary<char, char> myDict = new Dictionary<char, char>();
+            myDict.Add(')', '(');
+            myDict.Add(']', '[');
+            myDict.Add('}', '{');
+            Stack<char> myStack = new Stack<char>();
+            foreach (char c in str) 
+            {
+                if (c == '(' || c == '[' || c == '{' || c == ')' || c == ']' || c == '}') 
+                {
+                    if (myDict.ContainsKey(c))
+                    {
+                        if (myStack.Count == 0)
+                        {
+                            return false;
+                        }
+
+                        if (myStack.Pop() != myDict[c])
+                        {
+                            return false;
+                        }
+                    }
+                    else 
+                    {
+                        myStack.Push(c);
+                    }
+                }
+            }
+
+            if (myStack.Count > 0) 
+            {
+                return false;
+            }
+            return true;
+        }
     }
 }

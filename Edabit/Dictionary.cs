@@ -23,7 +23,8 @@ namespace Edabit
         public static void GetSortedByValue(int num)
         {
             var takePairsNumber = fruitsDictinary.OrderByDescending(pair => pair.Value).Take(num); // sorted by values in descending order (Banana, Peach, Pear, Mango) for number of pair given
-            var takePairs = fruitsDictinary.OrderBy(pair => pair.Value).Take(num); // sorted by values in ascending order (Pineapple, Apple, Orabge, Pear) for number of pair given
+            var takePairs = fruitsDictinary.OrderBy(pair => pair.Value).Take(num); // This will return an IEnumerable<KeyValuePair<string, int>> sorted by values in ascending order (Pineapple, Apple, Orabge, Pear) for number of pair given
+            // To turn it back into a dictionary, again Linq can help. For example: var top5 = dict.OrderByDescending(pair => pair.Value).Take(5).ToDictionary(pair => pair.Key, pair => pair.Value); 
             foreach (var pair in takePairs)
             {
                 Console.WriteLine($"{pair.Key} {pair.Value}");

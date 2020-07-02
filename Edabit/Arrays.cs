@@ -14,6 +14,9 @@ namespace Edabit
         //to print out the array in one line
         //Console.WriteLine("[{0}]", string.Join(", ", yourArray));
 
+        // array (result) of strings into list of strings
+        // List<string> myList = result.OfType<string>().ToList();
+
         // Array.Exists<T>(T[], Predicate<T>) method - Determines whether the specified array contains elements that match the conditions defined by the specified predicate.
         public static void ArrayExists() 
         {

@@ -9,8 +9,7 @@ namespace Edabit
             /* int[] A = new int[] { 4, 3, 2, 1, 5 };
             int[] B = new int[] { 0, 1, 0, 0, 0 };
             Console.WriteLine(StackQueue.Fish(A, B)); */
-            Dictionary.GetPopulated();
-            Dictionary.GetSortedByValue(4);
+            Console.WriteLine(StackQueue.CheckParentheses(""));
         }
 
         public static void TestTree() 
